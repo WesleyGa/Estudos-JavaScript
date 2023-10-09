@@ -1,8 +1,28 @@
-const a  = {name: "teste"}; //Essa constante não possui o conteúdo do objeto, mas sim o endereço no qual esse objeto está localizado.
+let valor;  // não inicializada;
+console.log(valor); // undefined porque não foi passado nenhum valor para a variavel
 
-const b = a; /* A constante 'b' recebe o mesmo endereço ao qual 'a' aponta, 
-              o que significa que ambas as constantes 'a' e 'b' estão apontando para o mesmo endereço de objeto. */
+valor = null; // null significa ausência de valor, mas mesmo assim, a variável 'valor' foi definida.
+console.log(valor);
 
-b.name = 'Wesley';
+ // cuidados
+ // console.log(valor.toString());  erro!
 
-console.log(a);
+ const produto = {};
+ console.log(produto.preco); // Undefined - O objeto tem um atributo, mas, o atributo não tem um valor.
+ console.log(produto); // vazio;
+
+ produto.preco = 3.50;
+
+ console.log(produto); // será exibido o preco do produto
+
+ produto.preco = undefined // evitar atribuir undefined
+
+ console.log(!!produto.preco); // O preco retornara undefined e para o boolean é  falso porque não contem o valor 
+
+ console.log(produto);
+
+ produto.preco = null; // sem preço
+ console.log(!!produto.preco); // false
+ 
+ console.log(produto);
+
