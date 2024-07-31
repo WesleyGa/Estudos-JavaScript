@@ -33,3 +33,14 @@ console.log(pessoa.dataNascimento) // [['dataNascimento', '01/02/2019']]
 
 // Usando Object.entries para listar as propriedades e seus valores
 console.log(Object.entries(pessoa))
+
+//Object.assign (ECMAScript 2015)
+const dest = { a: 1 }
+const o1 = { b: 2 }
+const o2 = { c: 3, a: 4 }
+const obj = Object.assign(dest, o1, o2)
+
+console.log(Object.entries(dest))
+
+/* Resumo: Algumas funções importantes de object, keys, assign,entries, define property,
+   formas de obter dados e fazer introspecções no objeto */
