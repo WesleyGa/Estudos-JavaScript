@@ -6,4 +6,4 @@ function calculos(n1 = 0, n2 = 0) {
     return console.log(`Soma: ${soma}\n subtração: ${subtracao}\n multiplicação: ${multiplicacao}\n divisão: ${divisao.toFixed(2)}`)
 }
 
-calculos(2, 3)
+calculos(2, 3);
